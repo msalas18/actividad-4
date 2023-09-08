@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+
+
+body{
+    background-color: #ffff;
+    padding: 0;
+    margin: 0;
+}
+
+.div-header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #365b77;
+}
+
+.div-header h2{
+    color: #ffff;
+    padding-left: 570px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.div-tabla{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabla-conclusion{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabla-conclusion table{
+    margin: 10px;
+    font-weight: 500;
+    width: 50%;
+    box-shadow: 0.7vw 0.6vw 0.9vw rgba(0, 0, 0, 0.3);
+    border-collapse: collapse;
+}
+
+.tabla-conclusion td:hover{
+    font-size: 1rem;
+    background-color: #557996;
+    transition: 1s;
+    color: #ffff;
+}
+
+.div-tabla table{
+    margin: 10px;
+    font-weight: 800;
+    width: 70%;
+    box-shadow: 0.7vw 0.6vw 0.9vw rgba(0, 0, 0, 0.3);
+    border-style:hidden;
+    border-collapse: collapse;
+}
+
+.div-tabla table {
+    margin: 10px;
+    font-weight: 800;
+    width: 70%;
+}
+
+
+table td{
+    background-color: #94b8d7;
+    padding: 10px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #2a2a29;
+}
+
+.td-sf{
+    margin: 0px;
+    background-color: #365b77;
+    padding: 20px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #ffff;
+}
+
+.td-sf:hover{
+    font-size: 1rem;
+    transition: 1s;
+}
+
+table thead th{
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    background-color: #365b77;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    color: #ffff;
+}
+
+/******************************/
+
+.footer{
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 94px;
+    width: 100%;
+    background-color:  #365b77;
+}
+
+.footer h4{
+    color: #ffff;
+    padding-left: 550px;
+    font-family: 'Roboto Slab', serif;
+}
+

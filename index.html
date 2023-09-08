@@ -1,0 +1,231 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Actividad 4</title>
+</head>
+<body>
+
+    <div class="div-header">
+        <h2>Actividad 4</h2>
+    </div>
+    
+    <div class="div-tabla">
+      <table>
+            <thead>
+                <th>Comando</th>
+                <th>Descripción</th>
+                <th>Parámetros</th>
+                <th>Ejemplo</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="td-sf">git config</td>
+                    <td>Establecer una configuración inicial para cuando se revise el historial de versiones</td>
+                    <td>--global: se refiere a que será una configuración global <br> -e: Fichero con la información de configuración de Git</td>
+                    <td>git config −−global user.name “[nombre-apellido]”</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git init</td>
+                    <td>Crear un repositorio de Git vacío o reinicializar uno ya existente</td>
+                    <td>--q: Crear un repositorio de Git vacío o reinicializar uno ya existente </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git init</td>
+                    <td>clonar un repositorio en un directorio nuevo</td>
+                    <td>--local</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git add</td>
+                    <td>Añadir contenido de un fichero al índice</td>
+                    <td>--dry-run: Realmente no añade los ficheros. Sólo muestra si existen o se ignorarán.</td>
+                    <td>git add --dry-run .</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git status</td>
+                    <td>Revisa el estado de los archivos en el repositorio.</td>
+                    <td>--short: produce una salida más concisa y fácil de leer que muestra solo el estado de los archivos en un formato compacto. </td>
+                    <td>git status -s</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git commit</td>
+                    <td>Guarda los cambios en el repositorio.</td>
+                    <td>-m: agrega un comentario al cambio realizado.</td>
+                    <td>git commit -m "Primer commit"</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git restore</td>
+                    <td>Guarda los cambios en el repositorio.</td>
+                    <td>--staged: agrega un comentario al cambio realizado.</td>
+                    <td>git restore --staged <nombre_del_archivo></td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git reset</td>
+                    <td>Mueve el puntero HEAD y, opcionalmente, el puntero de una rama, a un commit específico. </td>
+                    <td>--soft: Reestablece el HEAD al commit deseado, pero mantiene los cambios realizados en el área de staging (índice) y en el directorio de trabajo sin cambios.</td>
+                    <td>git reset --soft <commit><nombre_del_archivo></td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git rm</td>
+                    <td>Elimina archivos del repositorio, y del sistema de archivos local al mismo tiempo.</td>
+                    <td>--cached: Quita los archivos del área del índice pero los dejará en el sistema de archivos local.</td>
+                    <td>git rm --cached nombre_del_archivo<commit><nombre_del_archivo></td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git mv</td>
+                    <td>Mover o renombrar archivos y directorios en tu repositorio Git.</td>
+                    <td>--</td>
+                    <td>git mv archivo_viejo.txt archivo_nuevo.txt</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git branch</td>
+                    <td>Crear, listar y administrar ramas en un repositorio Git.</td>
+                    <td>-d: eliminar una rama <br> -m: cambiar el nombre de una rama.</td>
+                    <td>git branch -m nombre_nuevo nombre_antiguo</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git checkout</td>
+                    <td>Permite cambiar entre ramas o commits en un repositorio.</td>
+                    <td>-b: permite crear una nueva rama y cambiar automáticamente a ella.</td>
+                    <td>git checkout -b nombre_de_la_rama</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git switch</td>
+                    <td>Permite cambiar entre ramas o commits en un repositorio (es una versión actualizada de checkout).</td>
+                    <td>-c: permite crear una nueva rama y cambiar automáticamente a ella.</td>
+                    <td>git checkout -c nombre_de_la_rama</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git merge</td>
+                    <td>Fusionar cambios de una rama en otra.</td>
+                    <td>--abort: Restaura el estado anterior a la fusión en caso de que haya un conflicto.</td>
+                    <td>git merge --abort</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git tag</td>
+                    <td>Crea etiquetas (tags) que permiten marcar puntos específicos en la historia de un repositorio.</td>
+                    <td>-d: elimina el nombre de una etiqueta.</td>
+                    <td>git tag v1.0</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git worktree</td>
+                    <td>Permite crear y gestionar directorios de trabajo adicionales asociados a un mismo repositorio.</td>
+                    <td>list: Lista todos los directorios de trabajo asociados al repositorio.</td>
+                    <td>git worktree list</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git fetch</td>
+                    <td>Recuperar cambios remotos (commits, ramas, etiquetas, etc.) de un repositorio remoto al repositorio local sin realizar ninguna fusión automática o modificación en la rama actual.</td>
+                    <td>--all: Este parámetro recupera todas las ramas remotas y etiquetas del repositorio remoto. </td>
+                    <td>git fetch --all</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git pull</td>
+                    <td>Actualiza el repositorio local con los cambios del repositorio remoto.</td>
+                    <td>--rebase: aplica los cambios locales sobre los cambios del repositorio remoto.</td>
+                    <td>git pull --rebase origin rama</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git push</td>
+                    <td>Envía tus cambios locales desde tu repositorio local a un repositorio remoto</td>
+                    <td>--force: forza los cambios cuando los historiales divergen o se desea sobreescribir la rama remota con la versión local.</td>
+                    <td>git push --force origin rama</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git remote</td>
+                    <td>Gestionar y ver información sobre los repositorios remotos asociados con el repositorio local.</td>
+                    <td>add: agrega un nuevo repositorio remoto.</td>
+                    <td>git remote add <nombre-remoto> <URL-del-repositorio-remoto></td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git show</td>
+                    <td>Ver información detallada sobre un objeto específico en la historia de un repositorio.</td>
+                    <td>--stat: muestra estadísticas de cambios en los archivos afectados por el commit, incluyendo la cantidad de inserciones y eliminaciones.</td>
+                    <td>git show --stat <hash-del-commit></td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git diff</td>
+                    <td>Mostrar los cambios entre commits, commits y el árbol de trabajo, etc.</td>
+                    <td>--name-only: Muestra solo los nombres de los archivos que son diferentes, sin mostrar las diferencias reales.</td>
+                    <td>git diff --name-only</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git log</td>
+                    <td>Proporciona información detallada sobre las commits, como los autores, las fechas, los mensajes de confirmación y los identificadores únicos (hash) de los commits. </td>
+                    <td>--author: filtra las confirmaciones por autor específico.</td>
+                    <td>git log --author="msalas"</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git describe</td>
+                    <td>Proporcionar una descripción amigable y legible por humanos de un commit específico en el historial de Git en relación con las etiquetas (tags) más cercanas.</td>
+                    <td>--abbrev: permite especificar la cantidad de caracteres a utilizar en el hash abreviado de la etiqueta.</td>
+                    <td>git describe --abbrev=7 --dirty HEAD</td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git apply</td>
+                    <td>Aplicar cambios contenidos en un parche (patch) al directorio de trabajo o al índice (staging area) de Git.</td>
+                    <td>--check: verifica si el parche se puede aplicar con éxito sin realizar ningún cambio en los archivos del proyecto.</td>
+                    <td>git apply --check <archivo-de-parche></td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git cherry-pick</td>
+                    <td>Aplicar un commit específico de una rama a otra. Esto significa que se pueden tomar los cambios introducidos por un commit en una rama y aplicarlos a otra rama sin tener que fusionar toda la rama.</td>
+                    <td>--edit: permite editar el mensaje de confirmación del commit antes de realizar el cherry-pick. Después de ejecutar el comando, se abrirá el editor de texto para modificar el mensaje.</td>
+                    <td>git cherry-pick -e <hash-del-commit></td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git revert</td>
+                    <td>Deshacer cambios introducidos por un commit o una serie de commits específicos en una rama.</td>
+                    <td>--no-commit: realiza el proceso de revertido pero no crea automáticamente un nuevo commit. Esto te permite realizar cambios adicionales o ajustes antes de confirmar el revertido.</td>
+                    <td>git revert --no-commit <hash-del-commit></td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git bisect</td>
+                    <td>Realizar una búsqueda binaria en el historial de commits para encontrar el commit exacto que introdujo un problema o un cambio no deseado en el proyecto.</td>
+                    <td>--start: especifica dos commits conocidos: uno en el que el problema no existe y otro en el que el problema está presente.</td>
+                    <td>git bisect start <commit-bueno> <commit-malo></td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git blame</td>
+                    <td>Muestrala autoría de cada línea en un archivo específico dentro de un repositorio. Proporciona información detallada sobre quién realizó la última modificación en cada línea de un archivo, junto con el hash SHA-1 del commit en el que se realizó la modificación y la fecha en que se hizo</td>
+                    <td>-L: permite especificar un rango de líneas en el archivo que deseas analizar.</td>
+                    <td>git blame -L 10,20 <archivo></td>
+                </tr>
+                <tr>
+                    <td class="td-sf">git grep</td>
+                    <td>Buscar y filtrar contenido en archivos del repositorio. Permite buscar patrones de texto específicos dentro de los archivos del proyecto.</td>
+                    <td>-i: realiza la búsqueda de manera insensible a mayúsculas y minúsculas, lo que significa que coincidirá con el patrón sin importar si las letras son mayúsculas o minúsculas.</td>
+                    <td>git grep -i <patrón-de-búsqueda></td>
+                </tr>
+            </tbody>
+      </table>
+
+    </div>
+    <div class="tabla-conclusion">
+        <table>
+            <thead>
+                <th>Conclusión</th>
+            </thead>
+            <tr>
+                <td>
+                    Git es una herramienta bastante útil en el control de versiones, ya que cuenta con una amplia <br>
+                    variedad de funciones que permiten trabajar de manera colaborativa de forma muy cómoda. <br>
+                    Aunque en la tabla anterior no se muestran TODOS los comandos de Git, se puede observar que <br>
+                    da muchas opciones para el manejo de directorios, cubriendo la mayoría de las necesidades <br>
+                    que se pueden presentar al trabajar colaborativamente.
+
+                </td>
+            </tr>
+          </table>
+    </div>
+
+    <div class="footer">
+        <h4>Interfaces Web  |  Unidad 1</h4>
+    </div> 
+    
+</body>
+</html>
